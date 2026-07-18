@@ -5,11 +5,11 @@
 # you DON'T want (they push scores down).
 
 # ── Privacy & digital rights ──
-Court strikes down mass surveillance — major legal ruling limiting government bulk data collection and protecting privacy
+# (Kept concrete/substantive; dropped procedural court-ruling + GDPR-enforcement
+#  seeds — they pulled toward wonky legal coverage the owner cares about less.)
 Major platform ships end-to-end encryption — expanding private, secure communication for millions of users
 Encryption backdoor or client-side scanning mandate — governments threaten end-to-end encryption and private messaging
 Data broker or spyware vendor exposed — investigation reveals sale of location data or Pegasus-style surveillance tooling
-Landmark privacy enforcement — data-protection authority fines or restricts Big Tech surveillance under GDPR
 Age-verification or digital-ID mandate threatens anonymity — rights groups fight internet ID and online age-gating laws
 
 # ── Open hardware & new products ──
@@ -40,3 +40,4 @@ Hardware benchmark or performance comparison of GPUs, CPUs, or graphics drivers
 Hobbyist maker tutorial — building a gadget with a microcontroller for fun
 Product sale, discount, giveaway, book recommendation, or off-topic culture post
 Proprietary Big Tech product announcement with no open-source or privacy angle
+Procedural legal or regulatory update — court filing, data-adequacy review, litigation status, or policy-process news that does not itself change what users can do
