@@ -1,0 +1,26 @@
+# FLOSS / d-acc "Headline of the Day" bot — non-secret config.
+# Copy to config.yaml and edit. Secrets go in .env.
+#
+# This bot curates NEWS across privacy/rights, open hardware & products, FLOSS
+# news, and crypto/security research. Stories are ranked by RELEVANCE — cosine
+# similarity of the story to your taste profile (seeds/ground_truth.txt) minus a
+# penalty for similarity to disliked seeds/votes. Your 👍/👎 refine it over time.
+
+# Embedding model — used for BOTH clustering and relevance scoring. Tiny, CPU.
+embed_model: all-MiniLM-L6-v2
+
+# The local LLM (Ollama) that picks the headline from the shortlist, writes it,
+# and writes the 3-sentence summary. No cloud LLM, no API keys. Falls back to the
+# top story's title/feed-text if Ollama is unreachable.
+# model must be a tag you've pulled (`ollama list`); llama3.1:latest is the 8B.
+editor: {enabled: true, model: "llama3.1:latest", url: "http://localhost:11434", timeout: 60}
+
+max_per_day: 1        # one headline per day, max (or zero on a quiet day)
+max_age_hours: 36     # never surface a story whose top item is older than this
+feed_window_days: 2   # only consider feed entries from the last N days
+cluster_sim: 0.80     # title-embedding cosine for "same story" (48h window)
+
+# Relevance knobs (tuned via `calibrate`):
+floor: 0.35           # quiet-day bar: send nothing unless the best story's
+                      #   relevance clears this (cosine to your taste profile)
+lambda_neg: 0.5       # penalty weight on similarity to your disliked seeds/votes

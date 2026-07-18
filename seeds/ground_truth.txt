@@ -1,0 +1,42 @@
+# Taste seeds — examples of headlines you'd WANT, across the four domains.
+# Format:  label — gist   (em dash).  The label shows in the ping ("closest to");
+# the gist adds context to what gets embedded. '#' lines and blanks are ignored.
+# Edit freely; your 👍/👎 refine this over time. Lines under [NEGATIVE] are things
+# you DON'T want (they push scores down).
+
+# ── Privacy & digital rights ──
+Court strikes down mass surveillance — major legal ruling limiting government bulk data collection and protecting privacy
+Major platform ships end-to-end encryption — expanding private, secure communication for millions of users
+Encryption backdoor or client-side scanning mandate — governments threaten end-to-end encryption and private messaging
+Data broker or spyware vendor exposed — investigation reveals sale of location data or Pegasus-style surveillance tooling
+Landmark privacy enforcement — data-protection authority fines or restricts Big Tech surveillance under GDPR
+Age-verification or digital-ID mandate threatens anonymity — rights groups fight internet ID and online age-gating laws
+
+# ── Open hardware & new products ──
+New open-source hardware launches — open-schematic single-board computer, dev board, or gadget with free design files
+Repairable modular laptop or device announced — right-to-repair, user-serviceable open hardware like Framework
+Open RISC-V chip or open silicon milestone — royalty-free open instruction-set hardware advances
+Linux phone or open mobile hardware release — Pine64, postmarketOS, or mobile-Linux progress
+Privacy hardware product launches — open hardware security key, open router, or self-hosting appliance
+
+# ── FLOSS world news & analysis ──
+Major open-source relicensing or governance fight — software-freedom, license change, or foundation controversy
+Self-hostable open-source app launches — privacy-respecting alternative to a Big Tech cloud service
+Community forks or reclaims a project from corporate capture — open-source governance win
+Significant new capability lands in the Linux kernel or a major open-source project
+Grant or foundation funds critical FLOSS infrastructure — sustaining open-source public goods
+
+# ── Cryptography & security research ──
+New cryptographic attack breaks a widely used algorithm or protocol — security research with real-world impact
+Post-quantum cryptography standard finalized or deployed — quantum-resistant encryption rollout
+Zero-knowledge proof breakthrough — advanced cryptography enabling private, verifiable computation
+Serious vulnerability or supply-chain backdoor in widely used open-source software — like the XZ backdoor
+Decentralized protocol or self-sovereign identity advances — federation, peer-to-peer, or user-controlled data
+
+[NEGATIVE]
+Minor version or patch release with routine bug fixes — a version bump of existing software
+Weekly distribution security-update roundup — a list of package advisories
+Hardware benchmark or performance comparison of GPUs, CPUs, or graphics drivers
+Hobbyist maker tutorial — building a gadget with a microcontroller for fun
+Product sale, discount, giveaway, book recommendation, or off-topic culture post
+Proprietary Big Tech product announcement with no open-source or privacy angle

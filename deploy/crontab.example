@@ -1,0 +1,13 @@
+# FLOSS / d-acc news bot — example crontab.  Install with:  crontab -e
+# Ollama must be running locally (the editor + summary use it) — a home / always-on
+# box fits far better than an ephemeral CI runner.
+#
+# Adjust the path if your repo lives elsewhere. Logs go to logs/ (create it first:
+#   mkdir -p ~/floss-bot/logs
+
+# One news headline per day — evening (19:00 local).
+0 19 * * *  cd ~/floss-bot && .venv/bin/python -m src.main run-once >> logs/run.log 2>&1
+
+# Drain 👍/👎 votes every 2 minutes (folds them into the taste profile).
+# Drop this line if you run the poll-votes systemd service instead.
+*/2 * * * *  cd ~/floss-bot && .venv/bin/python -m src.main poll-votes --once >> logs/votes.log 2>&1

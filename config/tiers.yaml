@@ -1,0 +1,37 @@
+# Project importance tiers. Encodes MY priorities — edit freely.
+# `tiers` maps a tier number to project slugs. Tier weights live in config.yaml
+# (tier1 1.0, tier2 0.6, tier3/unknown 0.3). Slugs must match the `project:` tags
+# in config/feeds.yaml and the `project:` in the anitya list below.
+tiers:
+  1:  # the projects I care most about
+    - signal
+    - tor
+    - tails
+    - gnupg
+    - wireguard
+    - monero
+    - bitcoin-core
+    - veracrypt
+    - element
+    - briar
+    - gnutls
+    - openssl
+  2:  # important, second tier
+    - fdroid
+    - mozilla
+    - electrum
+    - grapheneos
+    - matrix
+
+# Anitya (release-monitoring.org) upstreams to poll for cross-forge releases.
+# Each: {name (the ?name= query), id (disambiguates collisions), project (slug)}.
+# IDs verified against the live API; names collide so the id is required.
+anitya:
+  - {name: gnupg, id: 1214, project: gnupg}
+  - {name: wireguard, id: 386541, project: wireguard}
+  - {name: tor, id: 4991, project: tor}
+  - {name: monero, id: 15526, project: monero}
+  - {name: gnutls, id: 1221, project: gnutls}
+  - {name: openssl, id: 2566, project: openssl}
+  - {name: veracrypt, id: 16003, project: veracrypt}
+  - {name: electrum, id: 10602, project: electrum}

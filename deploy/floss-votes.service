@@ -1,0 +1,21 @@
+# systemd user service: continuous 👍/👎 vote loop.
+# Install:
+#   cp deploy/floss-votes.service ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now floss-votes
+# (Use this OR the crontab poll-votes line, not both.)
+
+[Unit]
+Description=FLOSS/d-acc news bot — Telegram vote loop
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/floss-bot
+ExecStart=%h/floss-bot/.venv/bin/python -m src.main poll-votes
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

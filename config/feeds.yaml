@@ -1,0 +1,50 @@
+# News-first feed list (all fetch-tested 200 OK with recent items).
+# Releases + Anitya were removed on purpose: this bot curates NEWS across
+# privacy/rights, open hardware & products, FLOSS news, and crypto/security
+# research — not software version bumps. Scoring is by topic RELEVANCE
+# (embedding similarity to seeds/ground_truth.txt), not event type.
+# Each feed: {name, url, layer, project?, tier?}
+# Layers only feed advisory-detection + release-exclusion now, not the score.
+feeds:
+  # --- Privacy & digital rights (layer 3) ---
+  - {name: "EFF Deeplinks", url: "https://www.eff.org/rss/updates.xml", layer: 3}
+  - {name: "Access Now", url: "https://www.accessnow.org/feed/", layer: 3}
+  - {name: "EDRi", url: "https://edri.org/feed/", layer: 3}
+  - {name: "Privacy International", url: "https://privacyinternational.org/rss.xml", layer: 3}
+  - {name: "The Markup", url: "https://themarkup.org/feeds/rss.xml", layer: 3}
+  - {name: "404 Media", url: "https://www.404media.co/rss/", layer: 3}
+
+  # --- FLOSS news & analysis (layer 2) ---
+  - {name: "LWN.net", url: "https://lwn.net/headlines/newrss", layer: 2}
+  - {name: "It's FOSS News", url: "https://news.itsfoss.com/rss/", layer: 2}
+  - {name: "The Register", url: "https://www.theregister.com/headlines.atom", layer: 2}
+  - {name: "Phoronix", url: "https://www.phoronix.com/rss.php", layer: 2}  # noisy: relevance filters
+
+  # --- Open hardware & new products (layer 2) ---
+  - {name: "Hackaday", url: "https://hackaday.com/blog/feed/", layer: 2}
+  - {name: "CNX Software", url: "https://www.cnx-software.com/feed/", layer: 2}
+  - {name: "SparkFun News", url: "https://news.sparkfun.com/feeds/news", layer: 2}
+  - {name: "Adafruit Blog", url: "https://blog.adafruit.com/feed/", layer: 2}  # noisy: relevance filters
+  - {name: "Olimex", url: "https://olimex.wordpress.com/feed/", layer: 2}
+  - {name: "Framework", url: "https://frame.work/blog.rss", layer: 2}
+  - {name: "PINE64", url: "https://www.pine64.org/feed/", layer: 2}
+
+  # --- Crypto / security research, readable (layer 2 so analysis isn't typed "paper") ---
+  - {name: "Schneier on Security", url: "https://www.schneier.com/feed/atom/", layer: 2}
+  - {name: "Trail of Bits", url: "https://blog.trailofbits.com/feed/", layer: 2}
+  - {name: "NIST Cybersecurity", url: "https://www.nist.gov/blogs/cybersecurity-insights/rss.xml", layer: 2}
+  - {name: "Quanta Magazine", url: "https://www.quantamagazine.org/feed/", layer: 2}
+
+  # --- Decentralization / self-hosting (layer 2) ---
+  - {name: "Matrix.org Blog", url: "https://matrix.org/blog/feed", layer: 2, project: matrix, tier: 2}
+  - {name: "Mastodon Blog", url: "https://blog.joinmastodon.org/index.xml", layer: 2}
+  - {name: "Nextcloud Blog", url: "https://nextcloud.com/feed/", layer: 2}
+  - {name: "selfh.st", url: "https://selfh.st/rss/", layer: 2}
+
+  # --- Kept from before as NEWS: flagship project blogs, funding, talks ---
+  - {name: "Tor Project Blog", url: "https://blog.torproject.org/feed.xml", layer: 2, project: tor, tier: 1}
+  - {name: "Tails News", url: "https://tails.net/news/index.en.rss", layer: 2, project: tails, tier: 1}
+  - {name: "Mozilla Blog", url: "https://blog.mozilla.org/en/feed/", layer: 2, project: mozilla, tier: 2}
+  - {name: "F-Droid News", url: "https://f-droid.org/feed.xml", layer: 2, project: fdroid, tier: 2}
+  - {name: "media.ccc.de", url: "https://media.ccc.de/news.atom", layer: 6}
+  - {name: "NLnet", url: "https://nlnet.nl/feed.atom", layer: 7}
