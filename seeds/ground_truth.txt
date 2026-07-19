@@ -11,6 +11,9 @@ Major platform ships end-to-end encryption — expanding private, secure communi
 Encryption backdoor or client-side scanning mandate — governments threaten end-to-end encryption and private messaging
 Data broker or spyware vendor exposed — investigation reveals sale of location data or Pegasus-style surveillance tooling
 Age-verification or digital-ID mandate threatens anonymity — rights groups fight internet ID and online age-gating laws
+# research:
+Privacy research paper or study — academic measurement of web tracking, deanonymization, data leakage, or a privacy-enhancing technology like differential privacy or anonymous credentials
+Security research quantifying surveillance at scale — study measuring spyware, tracking, or mass data collection in the real world
 
 # ── Open hardware & new products ──
 New open-source hardware launches — open-schematic single-board computer, dev board, or gadget with free design files
@@ -18,6 +21,9 @@ Repairable modular laptop or device announced — right-to-repair, user-servicea
 Open RISC-V chip or open silicon milestone — royalty-free open instruction-set hardware advances
 Linux phone or open mobile hardware release — Pine64, postmarketOS, or mobile-Linux progress
 Privacy hardware product launches — open hardware security key, open router, or self-hosting appliance
+# research:
+Open hardware research — academic or technical work on open-source silicon, RISC-V microarchitecture, chip design, or auditable, verifiable hardware
+Reproducible hardware research published — an open design, measurement study, or academic platform released with open schematics
 
 # ── FLOSS world news & analysis ──
 Major open-source relicensing or governance fight — software-freedom, license change, or foundation controversy
@@ -25,6 +31,9 @@ Self-hostable open-source app launches — privacy-respecting alternative to a B
 Community forks or reclaims a project from corporate capture — open-source governance win
 Significant new capability lands in the Linux kernel or a major open-source project
 Grant or foundation funds critical FLOSS infrastructure — sustaining open-source public goods
+# research:
+Empirical open-source research — study on FLOSS security, software supply-chain risk, maintainer sustainability, or the economics of software freedom
+Research on decentralized or self-hosted systems — academic work on federation, peer-to-peer protocols, or user-controlled data infrastructure
 
 # ── Cryptography & security research ──
 New cryptographic attack breaks a widely used algorithm or protocol — security research with real-world impact
@@ -32,6 +41,9 @@ Post-quantum cryptography standard finalized or deployed — quantum-resistant e
 Zero-knowledge proof breakthrough — advanced cryptography enabling private, verifiable computation
 Serious vulnerability or supply-chain backdoor in widely used open-source software — like the XZ backdoor
 Decentralized protocol or self-sovereign identity advances — federation, peer-to-peer, or user-controlled data
+# research:
+Peer-reviewed cryptography or security paper — a new result from IACR, USENIX Security, PETS, or a top venue with practical impact
+Applied cryptography research or deep technical security analysis — protocol design, formal verification, or a rigorous vulnerability write-up
 
 [NEGATIVE]
 Minor version or patch release with routine bug fixes — a version bump of existing software

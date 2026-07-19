@@ -35,6 +35,11 @@ feeds:
   - {name: "NIST Cybersecurity", url: "https://www.nist.gov/blogs/cybersecurity-insights/rss.xml", layer: 2}
   - {name: "Quanta Magazine", url: "https://www.quantamagazine.org/feed/", layer: 2}
 
+  # --- Research (papers + deep technical research; layer 4) ---
+  - {name: "Freedom to Tinker", url: "https://freedom-to-tinker.com/feed/", layer: 4}  # Princeton privacy/security/policy research
+  - {name: "Google Project Zero", url: "https://googleprojectzero.blogspot.com/feeds/posts/default", layer: 4}  # deep security research
+  - {name: "IACR ePrint", url: "https://eprint.iacr.org/rss/rss.xml", layer: 4}  # cryptography papers (firehose; relevance-filtered)
+
   # --- Decentralization / self-hosting (layer 2) ---
   - {name: "Matrix.org Blog", url: "https://matrix.org/blog/feed", layer: 2, project: matrix, tier: 2}
   - {name: "Mastodon Blog", url: "https://blog.joinmastodon.org/index.xml", layer: 2}
