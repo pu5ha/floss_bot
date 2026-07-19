@@ -43,16 +43,21 @@ def build_keyboard(key: str) -> dict:
 
 
 def build_message(story: Story, summary: str) -> str:
-    """HTML body: headline / source(+N more) / 3-sentence summary / link."""
+    """HTML body: headline / source / 3-sentence summary / link.
+
+    Same line structure as the research bot's message (title, source tag, local-LLM
+    summary, link); '+N more' appends corroborating-source count when clustered.
+    """
     top = story.top_item
     headline = story.headline or top.title
     more = f" +{story.corroboration - 1} more" if story.corroboration > 1 else ""
-    return (
-        f"📰 <b>{_esc(headline)}</b>\n"
-        f"<i>{_esc(top.source)}{more}</i>\n"
-        f"{_esc(summary)}\n"
-        f"{_esc(top.url)}"
-    )
+    lines = [f"📰 <b>{_esc(headline)}</b>"]
+    if top.source:
+        lines.append(f"<i>{_esc(top.source)}{more}</i>")
+    if summary:
+        lines.append(_esc(summary))
+    lines.append(_esc(top.url))
+    return "\n".join(lines)
 
 
 def send_headline(cfg: Config, story: Story, summary: str) -> int | None:
