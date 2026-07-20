@@ -21,6 +21,6 @@ feed_window_days: 2   # only consider feed entries from the last N days
 cluster_sim: 0.80     # title-embedding cosine for "same story" (48h window)
 
 # Relevance knobs (tuned via `calibrate`):
-floor: 0.35           # quiet-day bar: send nothing unless the best story's
+floor: 0.30           # quiet-day bar: send nothing unless the best story's
                       #   relevance clears this (cosine to your taste profile)
 lambda_neg: 0.5       # penalty weight on similarity to your disliked seeds/votes
